@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookies and Crumble</title>
+</head>
+
+<body>
+  <h1>Commandes</h1>
+  <table border="1">
+    <tr>
+      <th>Produit</th>
+      <th>Prix unité</th>
+      <th>Prix douzaine</th>
+    </tr>
+    <tr>
+      <td>Cookie</td>
+      <td>3$</td>
+      <td>30$</td>
+    </tr>
+    <tr>
+      <td>Cupcake</td>
+      <td>4$</td>
+      <td>40$</td>
+    </tr>
+    <tr>
+      <td>Boisson</td>
+      <td>5$</td>
+      <td>50$</td>
+    </tr>
+  </table>
+  <h1>Formulaire des commandes</h1>
+  <form>
+    <label for="nom">Nom de famille</label><br>
+    <input type="text" id="nom" name="nom" placeholder="Nom de famille"></input><br>
+    <label for="prenom">Prénom</label><br>
+    <input type="text" id="prenom" name="prenom" maxlength="20" required></input><br>
+    <label for="courriel">Adresse courriel</label><br>
+    <input type="text" id="courriel" required></input><br>
+    <label for="dateLivraison">Date de la livraison</label><br>
+    <input type="date" id="dateLivraison" required></input><br>
+    <p>Sélectionnex votre premier choix</p>
+    <input type="radio" id="Cookie" name="1erChoix">Cookie</input><br>
+    <input type="radio" id="Cupcake" name="1erChoix">Cupcake</input><br>
+    <input type="radio" id="Boisson" name="1erChoix">Boisson</input><br>
+    <p>Sélectionnez la cantité de votre premier choix<br>
+      <input type="number" min="0" max="40" step="2"></input>
+    </p>
+    <p>Sélectionnex votre deuxième choix</p>
+    <input type="radio" id="Cookie" name="2emeChoix">Cookie</input><br>
+    <input type="radio" id="Cupcake" name="2emeChoix">Cupcake</input><br>
+    <input type="radio" id="Boisson" name="2emeChoix">Boisson</input><br>
+    <p>Sélectionnez la cantité de votre deuxième choix<br>
+      <input type="number" min="5" max="100" step="2"></input>
+    </p>
+    <input type="submit"></input>
+    <br>
+    <input type="reset">
+  </form>
+</body>
+
+</html>

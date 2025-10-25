@@ -1,0 +1,16 @@
+a {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px 5px;
+}
+a:hover {
+    background-color: rgb(164, 193, 254);
+    color: white;
+    border-bottom: 3px solid navy;
+}
+div {
+    text-align: center;
+    border: solid green 2px;
+}

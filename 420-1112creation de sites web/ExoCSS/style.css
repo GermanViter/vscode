@@ -1,0 +1,24 @@
+.profile-container {
+    background-color: #f9f9f9;
+    width: 650px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+.banner {
+    height: 100px;
+    background-color: rgb(47, 85, 189);
+    border-radius: 20px 20px 0px 0px;
+}
+.profile-pic {
+    border-radius: 50%;
+    border: solid 3px white;
+    margin-top: -70px;
+}
+p {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
