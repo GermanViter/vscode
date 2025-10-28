@@ -4,17 +4,31 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] nums = new int[7];
         remplirTableau(nums);
+        QuickSort.quickSort(nums);
         afficherTableaux(nums);
-        System.out.println(binarySearch(nums));
-
+        int x = nums[2];
+        int result = binarySearch(nums, x, 0, nums.length);
+        System.out.println(result);
     }
 
-    public static int binarySearch(int[] nums) {
-        int debut = 0;
-        int fin = nums.length - 1;
-        int milieux = (debut + fin) / 2;
+    public static void binarySearch(int[] nums) {
+        binarySearch(nums, x, 0, nums.length);
+    }
 
-        return nums[milieux];
+    public static int binarySearch(int[] nums, int x ,int debut, int fin) { 
+        while (debut <= fin) {
+            int mid = debut + (fin - debut) / 2;
+            if (x == nums[mid]) {
+                return nums[mid];
+            } 
+            if (x > nums[mid]) {
+                debut = mid + 1;
+            } else {
+                fin = mid - 1;
+            }
+        }
+
+        return -1;
     }
 
     public static int[] remplirTableau(int[] nums) {

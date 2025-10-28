@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class QuickSort {
-  public static void main(String[] args) {
+  /*public static void main(String[] args) {
     int[] nums = new int[7];
     remplirTableau(nums);
 
@@ -11,6 +11,10 @@ public class QuickSort {
     quickSort(nums, 0, nums.length - 1);
     System.out.print("Tableau arrengé : ");
     afficherTableaux(nums);
+  }*/
+
+  public static void quickSort(int[] nums) {
+      quickSort(nums, 0, nums.length - 1 );
   }
 
   public static int[] quickSort(int[] nums, int debut, int fin) {
