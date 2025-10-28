@@ -11,7 +11,7 @@ public class BinarySearch {
         System.out.println(result);
     }
 
-    public static void binarySearch(int[] nums) {
+    public static void binarySearch(int[] nums, int x) {
         binarySearch(nums, x, 0, nums.length);
     }
 

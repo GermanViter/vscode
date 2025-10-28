@@ -6,6 +6,7 @@ public class GestionDesNotes {
         System.out.print("Combiens d'étudiants ? ");
         int nbrDEleves = scan.nextInt();
         int somme = 0;
+        System.out.println();
 
         int[] eleves = new int[nbrDEleves];
         System.out.println("Entrez les notes de vos élèves : ");
