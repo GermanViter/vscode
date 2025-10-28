@@ -24,7 +24,7 @@ public class BonhommePendu {
         afficherLigne(longueur, espaceDecriture);
 
         boolean contientDesEspacesVides = true;
-        while (essais < 30 && contientDesEspacesVides) {
+        while (essais < 5 && contientDesEspacesVides) {
             contientDesEspacesVides = false;
 
             for (int i = 0; i < longueur; i++) {
@@ -60,10 +60,10 @@ public class BonhommePendu {
                 afficherLigne(longueur, espaceDecriture);
         }
 
-        if (!contientDesEspacesVides && essais <= 30) {
+        if (!contientDesEspacesVides && essais <= 5) {
             System.out.println("=== Bravo tu as deviné la chaine de charactères!!! ===");
             System.out.print("Nombre d'éssais : " + essais + "\n");
-        } else if (contientDesEspacesVides && essais >= 30) {
+        } else if (contientDesEspacesVides && essais >= 5) {
             System.out.println("=== Vous n'avez pas réussis à deviner la chaine de charactères ===");
         }
     }
