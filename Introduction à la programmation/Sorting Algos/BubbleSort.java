@@ -7,6 +7,7 @@ public class BubbleSort {
         System.out.print("Tableau de base : ");
         afficherTableaux(nums);
         bubbleSort(nums);
+        System.out.println(" ");
 
         System.out.print("Tableau arrengé : ");
         System.out.print("[");
