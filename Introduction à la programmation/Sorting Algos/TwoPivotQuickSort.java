@@ -1,18 +1,20 @@
-import java.util.Random;
-
 public class TwoPivotQuickSort {
   public static void main(String[] args) {
     int[] nums = new int[7];
-    remplirTableau(nums);
+    Functions.remplirTableau(nums);
     System.out.print("Tableau de base : ");
-    afficherTableaux(nums);
+    Functions.afficherTableaux(nums);
 
     dualPivotQuickSort(nums, 0, nums.length - 1);
     System.out.print("Tableau arrengé : ");
-    afficherTableaux(nums);
+    Functions.afficherTableaux(nums);
   }
 
-  public static void dualPivotQuickSort(int[] nums, int debut, int fin) {
+  public static void dualPivotQuickSort(int[] nums) {
+    dualPivotQuickSort(nums, 0, nums.length - 1);
+  }
+
+  private static void dualPivotQuickSort(int[] nums, int debut, int fin) {
     if (debut < fin) {
       int[] pivots = partitions(nums, debut, fin);
       int front1 = pivots[0];
@@ -24,9 +26,9 @@ public class TwoPivotQuickSort {
     }
   }
 
-  public static int[] partitions(int[] nums, int debut, int fin) {
+  private static int[] partitions(int[] nums, int debut, int fin) {
     if (nums[debut] > nums[fin]) {
-      swap(nums, debut, fin);
+      Functions.swap(nums, debut, fin);
     }
 
     int pivot1 = nums[debut];
@@ -38,11 +40,11 @@ public class TwoPivotQuickSort {
 
     while (i <= front2) {
       if (nums[i] < pivot1) {
-        swap(nums, i, front1);
+        Functions.swap(nums, i, front1);
         front1++;
         i++;
       } else if (nums[i] > pivot2) {
-        swap(nums, i, front2);
+        Functions.swap(nums, i, front2);
         front2--;
       } else {
         i++;
@@ -51,30 +53,9 @@ public class TwoPivotQuickSort {
     front1--;
     front2++;
 
-    swap(nums, front1, debut);
-    swap(nums, front2, fin);
+    Functions.swap(nums, front1, debut);
+    Functions.swap(nums, front2, fin);
 
     return new int[] { front1, front2 };
-  }
-
-  public static void swap(int[] nums, int i, int j) {
-    int temp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = temp;
-  }
-
-  public static void remplirTableau(int[] nums) {
-    Random rand = new Random();
-    for (int i = 0; i < nums.length; i++) {
-      nums[i] = rand.nextInt(100);
-    }
-  }
-
-  public static void afficherTableaux(int[] nums) {
-    System.out.print("[");
-    for (int i = 0; i < nums.length - 1; i++) {
-      System.out.print(nums[i] + ", ");
-    }
-    System.out.print(nums[nums.length - 1] + "]\n");
   }
 }
