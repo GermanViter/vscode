@@ -16,6 +16,7 @@ public class ClassementJoueurs {
         for (Joueur j : joueurs) {
             j.afficher();
         }
+        System.out.println();
         quickSort(joueurs, 0, joueurs.length - 1);
 
         System.out.println("=== classement avec le tri ===");
@@ -52,17 +53,18 @@ public class ClassementJoueurs {
 
         return i + 1;
     }
+}
 
-    class Joueur {
-            String nom;
-            int score;
-        
-            public Joueur(String nom, int score) {
-                this.nom = nom;
-                this.score = score;
-            }
-        
-            public void afficher() {
-                System.out.println(nom + " → " + score + " points");
-            }
-        }
+class Joueur {
+    String nom;
+    int score;
+
+    public Joueur(String nom, int score) {
+        this.nom = nom;
+        this.score = score;
+    }
+
+    public void afficher() {
+        System.out.println(nom + " → " + score + " points");
+    }
+}
