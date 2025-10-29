@@ -16,7 +16,7 @@ public class GestionDesNotes {
         double moyenne = somme / (double) eleves.length;
         QuickSort.quickSort(eleves);
         System.out.print("Notes triés : ");
-        QuickSort.afficherTableaux(eleves);
+        Functions.afficherTableaux(eleves);
         System.out.printf("Moyenne : %.1f\n", moyenne);
         System.out.printf("Note la plus basse : %d\n", eleves[0]);
         System.out.printf("Note la plus haute : %d\n", eleves[eleves.length - 1]);
