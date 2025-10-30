@@ -1,0 +1,1 @@
+let numAleatoire = Math.floor(Math.random() * 25) + 25;
