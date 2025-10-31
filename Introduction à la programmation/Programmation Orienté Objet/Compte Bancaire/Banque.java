@@ -6,11 +6,11 @@ public class Banque {
         CompteBancaire german = new CompteBancaire(10000.00);
         
         while (true) {
-            System.out.printf("Que voulez vous faire dans vvotre compte ?");
-            System.out.printf("[0] quitter");
-            System.out.printf("[1] déposer");
-            System.out.printf("[2] retirer");
-            System.out.printf("[3] afficher le solde");
+            System.out.printf("Que voulez vous faire dans vvotre compte ?\n");
+            System.out.printf("[0] quitter\n");
+            System.out.printf("[1] déposer\n");
+            System.out.printf("[2] retirer\n");
+            System.out.printf("[3] afficher le solde\n");
 
             int choix = scanner.nextInt();
 
