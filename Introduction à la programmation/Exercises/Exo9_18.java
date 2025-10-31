@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main12 {
+public class Exo9_18 {
     public static void afficherPiramide(int n) {
         for (int i = 1; i <= n; i++) {
             System.out.println(" ".repeat(n - i) + "*".repeat(i));
