@@ -32,7 +32,7 @@ public class Main {
                     Livre l = biblio.rechercher(titre);
                     
                     if (l != null) {
-                        l.emprunter();
+                       l.emprunter();
                     } else {
                         System.out.println("Livre introuvable");
                     }
