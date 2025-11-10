@@ -1,9 +1,15 @@
-let anneDeNaissance = prompt("Entrez votre annee de naissance : ");
-let anneeActuelle = new Date();
-let age = anneeActuelle.getFullYear() - anneDeNaissance.getFullYear();
+let anneDeNaissance = prompt("Année : ");
+let moisDeNaissance = prompt("Mois : ");
+let jourDeNaissance = prompt("Jour : ");
 
-if (age > 18) {
-    alert("Majeur");
-} else {
-    alert("Mineur");
+switch () {
+    case value:
+        
+        break;
+    case :
+        
+        break;
+
+    default:
+        break;
 }
