@@ -11,6 +11,6 @@ public class Exo9_4 {
             somme += Integer.valueOf(args[i]);
         }
         double moyenne = somme / (double) args.length;
-        System.out.printf("Moyenne : %.1f\n", moyenne);
+        System.out.printf("\nMoyenne : %.1f\n", moyenne);
     }
 }
