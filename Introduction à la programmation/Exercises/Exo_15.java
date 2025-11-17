@@ -9,7 +9,7 @@ public class Exo_15 {
     }
     public static void main(String[] args) {
         int[] nums = {2, 5, 83, 12};
-        int x = 84;
+        int x = 83;
 
         System.out.println(contientNombre(nums, x));
     }
