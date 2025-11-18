@@ -21,13 +21,13 @@ public class Ex12_9 {
                     continue;
                 case 2:
                     afficherTab(tab);
-                continue;
+                    continue;
                 case 3:
-                System.out.println("Fin du programme");
-                break;
+                    System.out.println("Fin du programme");
+                    break;
                 default:
-                System.out.println("Opération non recnnue");
-                continue;
+                    System.out.println("Opération non recnnue");
+                    continue;
             }
             break;
         }

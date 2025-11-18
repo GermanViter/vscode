@@ -76,7 +76,7 @@ public class Exo_71 {
                     System.out.println();
                     System.out.printf("Total de la facture actuelle : %.2f$\n\n", total);
                     compteurPlats[choixDuPlat - 1]++;
-                    break;
+                    continue;
 
                 case 2:
                     // === RETIRER UN PLAT ===
@@ -95,21 +95,21 @@ public class Exo_71 {
                     } else {
                         System.out.println("Vous ne pouvez pas supprimer un item que vous ne possedez pas.\n");
                     }
-                    break;
+                    continue;
 
                 case 3:
                     // === AFFICHER LE REÇU ===
                     afficherReçu(compteurPlats, total, plats, prix);
-                default:
+                    continue;
+                case 4:
+                    afficherReçu(compteurPlats, total, plats, prix);
+                    System.out.println("Merci pour votre visite!");
                     break;
+                default:
+                    System.out.println("Opération non reconnue");
+                    continue;
             }
-
-            // === FINALISER LA TRANSACTION ===
-            if (choix == 4) { 
-                afficherReçu(compteurPlats, total, plats, prix);
-                System.out.println("Merci pour votre visite!");
-                break;
-            }
+            break;
         }
     }
 }
