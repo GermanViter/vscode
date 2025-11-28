@@ -68,6 +68,7 @@ public class Exo_71 {
             }
             break;
         }
+        scan.close();
     }
 
     public static void afficherMenu(double total) {
