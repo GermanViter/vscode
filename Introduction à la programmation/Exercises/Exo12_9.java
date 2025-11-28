@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex12_9 {
+public class Exo12_9 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
@@ -9,7 +9,12 @@ public class Ex12_9 {
         int compteurDAjout = 0;
 
         while (true && compteurDAjout < 5) {
-            System.out.print("Choisicez une opotion ([1]: Ajouter un nombre au tableau, [2]: Afficher le contenu du tableau, [3]: Quitter) : ");
+            //System.out.print("Choisicez une opotion ([1]: Ajouter un nombre au tableau, [2]: Afficher le contenu du tableau, [3]: Quitter) : ");
+            System.out.println();
+            System.out.println("Choisissez une option : ");
+            System.out.println("[1] Ajouter un nombre au tableau");
+            System.out.println("[2] Afficher le tableau");
+            System.out.println("[3] Quitter");
             int choix = scan.nextInt();
 
             switch (choix) {

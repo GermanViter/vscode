@@ -6,8 +6,6 @@ let fin = mot.length - 1;
 let estUnPalindrome = true;
 
 while (debut < fin) {
-    
-
     if (motMin.charAt(debut) != motMin.charAt(fin)) {
         estUnPalindrome = false;
         break;

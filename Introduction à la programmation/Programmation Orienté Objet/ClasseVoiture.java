@@ -13,9 +13,9 @@ public class ClasseVoiture {
             v2.accelerer(rand.nextInt(31) + 10);
             v3.accelerer(rand.nextInt(31) + 10);
 
-            v1.afficher();
-            v2.afficher();
-            v3.afficher();
+            //v1.afficher();
+            //v2.afficher();
+            //v3.afficher();
         }
 
         Voiture gagnant = v1;
@@ -27,7 +27,7 @@ public class ClasseVoiture {
             gagnant = v3;
         }
 
-        gagnant.afficher();
+        //gagnant.afficher();
     }
 }
 
@@ -53,12 +53,5 @@ class Voiture {
         }
     }
 
-    public void afficher() {
-        System.out.printf("""
-                Voiture
-                Marque : %s
-                Modele : %s
-                Vitesse : %d km/h
-                """, marque, modele, vitesse);
-    }
+   
 }
